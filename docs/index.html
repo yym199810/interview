@@ -11,11 +11,23 @@
 <body>
   <div id="app"></div>
   <script>
+    // window.$docsify = {
+    //   name: '',
+    //   repo: '',
+    //   coverpage: true,
+    //   loadSidebar: true
+    // }
     window.$docsify = {
       name: '',
       repo: '',
-      coverpage: true,
-      loadSidebar: true
+      // 侧边栏
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      // 侧边栏的映射标题至二级
+      subMaxLevel: 2,
+      coverpage: true
     }
   </script>
   <!-- Docsify v4 -->
